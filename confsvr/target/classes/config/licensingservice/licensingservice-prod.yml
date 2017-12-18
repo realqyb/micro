@@ -1,0 +1,19 @@
+# Copyright 2016 Mobvoi Inc. All Rights Reserved.
+db.class:"com.mysql.jdbc.Driver"
+db.url:"jdbc:mysql://localhost/vwmobvoi_account?characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull&statementInterceptors=com.github.kristofa.brave.mysql.MySQLStatementInterceptor&autoReconnect=true&failOverReadOnly=false"
+db.user:"root"
+db.password:"root"
+db.initialPoolSize:"5"
+db.minPoolSize:"1"
+db.maxPoolSize:"15"
+db.testConnectionOnCheckout:"true"
+
+prod.test.value:"prodvalue"
+
+# flyway config
+#flyway.database=vwmobvoi_account
+#flyway.schema.table=schema_version_ma
+#flyway.encoding=utf-8
+#flyway.locations=classpath:/db/migration
+#flyway.setBaselineOnMigrate=true
+#flyway.setValidateOnMigrate=false
